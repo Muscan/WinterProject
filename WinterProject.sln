@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinterProject", "WinterProj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session1", "Session1\Session1.csproj", "{417E0D1A-7263-45AA-9A6B-1D22946FB78B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session2ObjectsClassesArraysStatic", "Session2ObjectsClassesArraysStatic\Session2ObjectsClassesArraysStatic.csproj", "{FD85418F-3E82-4E83-B4F7-0386FD6C24A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{417E0D1A-7263-45AA-9A6B-1D22946FB78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{417E0D1A-7263-45AA-9A6B-1D22946FB78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{417E0D1A-7263-45AA-9A6B-1D22946FB78B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD85418F-3E82-4E83-B4F7-0386FD6C24A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD85418F-3E82-4E83-B4F7-0386FD6C24A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD85418F-3E82-4E83-B4F7-0386FD6C24A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD85418F-3E82-4E83-B4F7-0386FD6C24A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
