@@ -46,3 +46,4 @@ namespace Session3InheritanceAccesModifiersAutoPropStatic.Exercise5
             return "Book name: " + BookName + ", author: " + bookAuthor + " ,pages: " + bookPages + " Book available? " + bookAvailable;
         }
     }
+}
