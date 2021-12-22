@@ -19,6 +19,7 @@ namespace Session4AbstractClassesInterfacesStaticMembersAutoProp
             this.NrOfLeaves = NrOfLeaves;
             this.age = Age;
         }
+
         //prop + tab 2times
         public int NrOfLeaves { get; set; } //private int nrOfLeaves; + set+get pt NbOfLeaves
         public int Age
