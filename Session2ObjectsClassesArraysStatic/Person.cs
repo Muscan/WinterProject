@@ -65,7 +65,7 @@ namespace Session2ObjectsClassesArraysStatic
         //Garbage collector -> apeleaza constructorul
 
 
-        //I override de string method.
+        //I override of string method.
 
         public override string ToString()
         {
