@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session3InheritanceAccesMod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session4AbstractClassesInterfacesStaticMembersAutoProp", "Session4AbstractClassesInterfacesStaticMembersAutoProp\Session4AbstractClassesInterfacesStaticMembersAutoProp.csproj", "{99250A55-7A3B-45B2-8B48-B2C931BFBF58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session5WinForms", "Session5WinForms\Session5WinForms.csproj", "{14F9DE09-1F78-43D4-8C34-8BF10917D117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session5RequirementsSolved", "Session5RequirementsSolved\Session5RequirementsSolved.csproj", "{B92488CB-E1F8-455B-A5DE-F8A0419FFB4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{99250A55-7A3B-45B2-8B48-B2C931BFBF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99250A55-7A3B-45B2-8B48-B2C931BFBF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99250A55-7A3B-45B2-8B48-B2C931BFBF58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14F9DE09-1F78-43D4-8C34-8BF10917D117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14F9DE09-1F78-43D4-8C34-8BF10917D117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14F9DE09-1F78-43D4-8C34-8BF10917D117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14F9DE09-1F78-43D4-8C34-8BF10917D117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B92488CB-E1F8-455B-A5DE-F8A0419FFB4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B92488CB-E1F8-455B-A5DE-F8A0419FFB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B92488CB-E1F8-455B-A5DE-F8A0419FFB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B92488CB-E1F8-455B-A5DE-F8A0419FFB4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
