@@ -13,14 +13,16 @@ namespace Session6IOWorkingWithFilesImagesWinForms
         Exercise 1. 
         Implement a basic text editor, similar to Notepad. 
         Required functionality:
-        - open a text file from the disk and display the text in the UI
+        - open a text file from the disk and display the text in the UI (select path)
         - edit the text in the UI (Edit button)
         - save the text back to file (Save button)
-        - enter text in teh editor and save it to a new file. (Dynaic path) folderBrowserDialog.SelectedPath;
+        - enter text in teh editor and save it to a new file.-Create another dynamic file
+          (Dynamic path) folderBrowserDialog.SelectedPath;
         
         Exercise 2. 
         Display a picture in a Windows Forms application. 
-        Try to implement this so that the user can choose what picture to display. (Drop down - img 1, 2, 3)
+        Try to implement this so that the user can choose what picture to display. 
+        (Drop down - img 1, 2, 3)
         
         Exercise 3. 
         Define an application that you would like to implement. 
