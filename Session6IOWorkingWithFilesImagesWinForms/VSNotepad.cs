@@ -13,7 +13,7 @@ namespace Session6IOWorkingWithFilesImagesWinForms
 {
     public partial class VSNotepad : Form
     {
-        private string fullFileName;
+        private string fullFileName = "";
         public VSNotepad()
         {
             InitializeComponent();
@@ -43,13 +43,13 @@ namespace Session6IOWorkingWithFilesImagesWinForms
             //path to the file
             string folderPath = folderBrowserDialog1.SelectedPath;
             //name of the file
-            string fileName = "tests.txt";
+            string fileName = txtBoxFileName.Text+".txt";
             string fullFileName = folderPath + "\\" + fileName;
             //Create file tests.txt
             using (FileStream fs = File.Create(fullFileName))
             {
                 //UTF8Enconding GetBytes() -> From a string returns a bytes array.
-                byte[] content = new UTF8Encoding().GetBytes("Text from VS");
+                byte[] content = new UTF8Encoding().GetBytes(richTextBox1.Text);
                 fs.Write(content, 0, content.Length);
                 //In Filestrean we write the content. Start from position 0 and write the lenght
 
@@ -70,7 +70,7 @@ namespace Session6IOWorkingWithFilesImagesWinForms
             {
                 using (FileStream fs = File.OpenRead(fullFileName))
                 {
-                    byte[] content = new byte[100];
+                    byte[] content = new byte[fs.Length];
                     UTF8Encoding encoder = new UTF8Encoding();
                     fs.Read(content, 0, content.Length);
                     //transfrom from bytes to string
@@ -83,19 +83,46 @@ namespace Session6IOWorkingWithFilesImagesWinForms
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (FileStream fs = File.Create(fullFileName))
+            if (fullFileName != "")
             {
-                //UTF8Enconding GetBytes() -> From a string returns a bytes array.
-                byte[] content = new UTF8Encoding().GetBytes(richTextBox1.Text);
-                fs.Write(content, 0, content.Length);
-                //In Filestrean we write the content. Start from position 0 and write the lenght
+                using (FileStream fs = File.Create(fullFileName))
+                {
+                    //UTF8Enconding GetBytes() -> From a string returns a bytes array.
+                    byte[] content = new UTF8Encoding().GetBytes(richTextBox1.Text);
+                    fs.Write(content, 0, content.Length);
+                    //In Filestrean we write the content. Start from position 0 and write the lenght
 
+                }
             }
+            else
+            {
+                MessageBox.Show("File must be selected before editing! ");
+            }
+           
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (fullFileName != "")
+            {
+                using (FileStream fs = File.Create(fullFileName))
+                {
+                    //UTF8Enconding GetBytes() -> From a string returns a bytes array.
+                    byte[] content = new UTF8Encoding().GetBytes(richTextBox1.Text);
+                    fs.Write(content, 0, content.Length);
+                    //In Filestrean we write the content. Start from position 0 and write the lenght
+
+                }
+            }
+            
+            MessageBox.Show("You forgot to save the changes. We got your back! ");
+
             this.Close();
+        }
+
+        private void txtBoxFileName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

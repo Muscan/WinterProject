@@ -24,7 +24,7 @@ namespace Session6PhotoAlbum
             openFileDialog1.ShowDialog();
             string filePath = openFileDialog1.FileName;
             
-            if (Path.GetExtension(filePath) == ".png")
+            if (Path.GetExtension(filePath).ToLowerInvariant() == ".png")
             {
                 pctBox.Image = Image.FromFile(filePath);
             }

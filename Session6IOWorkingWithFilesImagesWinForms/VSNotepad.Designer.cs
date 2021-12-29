@@ -38,6 +38,8 @@ namespace Session6IOWorkingWithFilesImagesWinForms
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtBoxFileName = new System.Windows.Forms.TextBox();
+            this.lblFileName = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,11 +110,30 @@ namespace Session6IOWorkingWithFilesImagesWinForms
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // txtBoxFileName
+            // 
+            this.txtBoxFileName.Location = new System.Drawing.Point(235, 70);
+            this.txtBoxFileName.Name = "txtBoxFileName";
+            this.txtBoxFileName.Size = new System.Drawing.Size(178, 27);
+            this.txtBoxFileName.TabIndex = 5;
+            this.txtBoxFileName.TextChanged += new System.EventHandler(this.txtBoxFileName_TextChanged);
+            // 
+            // lblFileName
+            // 
+            this.lblFileName.AutoSize = true;
+            this.lblFileName.Location = new System.Drawing.Point(235, 36);
+            this.lblFileName.Name = "lblFileName";
+            this.lblFileName.Size = new System.Drawing.Size(76, 20);
+            this.lblFileName.TabIndex = 6;
+            this.lblFileName.Text = "File Name";
+            // 
             // VSNotepad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblFileName);
+            this.Controls.Add(this.txtBoxFileName);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -135,5 +156,7 @@ namespace Session6IOWorkingWithFilesImagesWinForms
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtBoxFileName;
+        private System.Windows.Forms.Label lblFileName;
     }
 }
