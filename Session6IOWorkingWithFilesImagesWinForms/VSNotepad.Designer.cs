@@ -40,6 +40,8 @@ namespace Session6IOWorkingWithFilesImagesWinForms
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtBoxFileName = new System.Windows.Forms.TextBox();
             this.lblFileName = new System.Windows.Forms.Label();
+            this.cmbBoxExtensions = new System.Windows.Forms.ComboBox();
+            this.lblExtension = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,11 +129,35 @@ namespace Session6IOWorkingWithFilesImagesWinForms
             this.lblFileName.TabIndex = 6;
             this.lblFileName.Text = "File Name";
             // 
+            // cmbBoxExtensions
+            // 
+            this.cmbBoxExtensions.FormattingEnabled = true;
+            this.cmbBoxExtensions.Items.AddRange(new object[] {
+            ".txt",
+            ".pdf",
+            ".png"});
+            this.cmbBoxExtensions.Location = new System.Drawing.Point(430, 69);
+            this.cmbBoxExtensions.Name = "cmbBoxExtensions";
+            this.cmbBoxExtensions.Size = new System.Drawing.Size(151, 28);
+            this.cmbBoxExtensions.TabIndex = 7;
+            this.cmbBoxExtensions.SelectedIndexChanged += new System.EventHandler(this.cmbBoxExtensions_SelectedIndexChanged);
+            // 
+            // lblExtension
+            // 
+            this.lblExtension.AutoSize = true;
+            this.lblExtension.Location = new System.Drawing.Point(430, 38);
+            this.lblExtension.Name = "lblExtension";
+            this.lblExtension.Size = new System.Drawing.Size(116, 20);
+            this.lblExtension.TabIndex = 8;
+            this.lblExtension.Text = "Select extension";
+            // 
             // VSNotepad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblExtension);
+            this.Controls.Add(this.cmbBoxExtensions);
             this.Controls.Add(this.lblFileName);
             this.Controls.Add(this.txtBoxFileName);
             this.Controls.Add(this.richTextBox1);
@@ -158,5 +184,7 @@ namespace Session6IOWorkingWithFilesImagesWinForms
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.TextBox txtBoxFileName;
         private System.Windows.Forms.Label lblFileName;
+        private System.Windows.Forms.ComboBox cmbBoxExtensions;
+        private System.Windows.Forms.Label lblExtension;
     }
 }

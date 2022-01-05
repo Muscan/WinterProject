@@ -45,7 +45,7 @@ namespace Session6IOWorkingWithFilesImagesWinForms
             //path to the file
             string folderPath = folderBrowserDialog1.SelectedPath;
             //name of the file
-            string fileName = txtBoxFileName.Text+".txt";//I would like add a drop down to selecte .pdf, .jpg etc. 
+            string fileName = txtBoxFileName.Text+cmbBoxExtensions.SelectedText.ToString();//I would like add a drop down to selecte .pdf, .jpg etc. 
             string fullFileName = folderPath + "\\" + fileName;
 
             //Create file tests.txt
@@ -132,6 +132,11 @@ namespace Session6IOWorkingWithFilesImagesWinForms
         }
 
         private void txtBoxFileName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbBoxExtensions_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
