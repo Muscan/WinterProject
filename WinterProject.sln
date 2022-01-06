@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session5WinForms", "Session
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session5RequirementsSolved", "Session5RequirementsSolved\Session5RequirementsSolved.csproj", "{B92488CB-E1F8-455B-A5DE-F8A0419FFB4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session6IOWorkingWithFilesImagesWinForms", "Session6IOWorkingWithFilesImagesWinForms\Session6IOWorkingWithFilesImagesWinForms.csproj", "{B1DF236E-FB79-42EE-B38C-20B4127AD3D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session6IOWorkingWithFilesImagesWinForms", "Session6IOWorkingWithFilesImagesWinForms\Session6IOWorkingWithFilesImagesWinForms.csproj", "{B1DF236E-FB79-42EE-B38C-20B4127AD3D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session6PhotoAlbum", "Session6PhotoAlbum\Session6PhotoAlbum.csproj", "{4AD63BBE-58FF-4A3C-8D42-3D129528167E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session6PhotoAlbum", "Session6PhotoAlbum\Session6PhotoAlbum.csproj", "{4AD63BBE-58FF-4A3C-8D42-3D129528167E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurier", "Kurier\Kurier.csproj", "{5D8C1BC3-73C6-4D95-A7D5-224A3868D2E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{4AD63BBE-58FF-4A3C-8D42-3D129528167E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AD63BBE-58FF-4A3C-8D42-3D129528167E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AD63BBE-58FF-4A3C-8D42-3D129528167E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D8C1BC3-73C6-4D95-A7D5-224A3868D2E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D8C1BC3-73C6-4D95-A7D5-224A3868D2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D8C1BC3-73C6-4D95-A7D5-224A3868D2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D8C1BC3-73C6-4D95-A7D5-224A3868D2E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
