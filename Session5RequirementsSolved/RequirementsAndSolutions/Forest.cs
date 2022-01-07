@@ -29,6 +29,11 @@ namespace Session5RequirementsSolved.RequirementsAndSolutions
                 Console.WriteLine(saveTreeHere.NrOfLeaves + " " + saveTreeHere.Age + " " + Tree.StaticHeight);
             }
         }
+
+        public virtual void PrintMessage()
+        {
+            Console.WriteLine("In Forest");
+        }
     }
 
     partial class Forest

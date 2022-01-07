@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Session5RequirementsSolved.RequirementsAndSolutions;
+using System;
 
 namespace Session5RequirementsSolved
 {
@@ -9,13 +10,17 @@ namespace Session5RequirementsSolved
         static void Main(string[] args)
         {
 
-           //7.SubtractTen();
+            //7.SubtractTen();
 
             //Cannot acces the Subtract Ten Method
-           
-           /// todo: show a task
-      
-          
+
+            //todo: show a task
+
+            ChildForest cf = new ChildForest();
+            cf.PrintMessage();
+
+
+
         }
     
 

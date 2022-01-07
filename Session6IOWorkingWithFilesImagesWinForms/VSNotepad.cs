@@ -37,19 +37,21 @@ namespace Session6IOWorkingWithFilesImagesWinForms
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //var result1 = MessageBox.Show("");
             //Open the FileExplorer Directory on the local PC-> Target
             //Take a folder in which we will save the notepad file
             //In dr I hold the selected resulst(THE PATH -> NOT USED)
-            DialogResult dr = folderBrowserDialog1.ShowDialog();
+            folderBrowserDialog1.ShowDialog();
 
             //path to the file
             string folderPath = folderBrowserDialog1.SelectedPath;
             //name of the file
             string fileName = txtBoxFileName.Text+cmbBoxExtensions.SelectedText.ToString();//I would like add a drop down to selecte .pdf, .jpg etc. 
             string fullFileName = folderPath + "\\" + fileName;
-
+            
             //Create file tests.txt
             //In File Class the Create Method is a static method -> that`s why It can be called without new
+            //In a static method we cannot use Instance members
             using FileStream fs = File.Create(fullFileName);
             {
                 //UTF8Enconding GetBytes() -> From a string returns a bytes array.
@@ -65,12 +67,12 @@ namespace Session6IOWorkingWithFilesImagesWinForms
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //DialogResult dr = folderBrowserDialog1.ShowDialog();
+            //folderBrowserDialog1.ShowDialog();
             //path to the file
             //string folderPath = folderBrowserDialog1.SelectedPath;
             //print the text from the file
             //Method ShowDialog is called by the openFileDialog1
-            openFileDialog1.ShowDialog();
+            var result =  openFileDialog1.ShowDialog();
             //fullFileName -> global so that it can be used in other methods
             fullFileName = openFileDialog1.FileName;
             //https://stackoverflow.com/questions/25807209/validate-uploaded-file-extension
