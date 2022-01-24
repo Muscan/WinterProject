@@ -17,7 +17,9 @@ namespace Session7CRUDExcel.Controller
             //default classController
             //Initialize the list of Persons
             persons = GetSetupData();
+            
             Task task = CreateExcel();
+            Task task1 = CreateCSV();
         }
 
         public static List<Person> GetSetupData()
@@ -34,8 +36,9 @@ namespace Session7CRUDExcel.Controller
         {
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
-            var file = new FileInfo(@"/../../Files/Test.xlsx");
+            var file = new FileInfo(@"D:\C#\Recap\WinterProject\Session7CRUDExcel\Files\Test.xlsx");
             await SaveExcelFile(persons, file);
+
         }
         public static async Task SaveExcelFile(List<Person> people, FileInfo file)
         {
@@ -43,6 +46,23 @@ namespace Session7CRUDExcel.Controller
             var package = new ExcelPackage(file);
             var ws = package.Workbook.Worksheets.Add("MainReport");
 
+            var range = ws.Cells["A1"].LoadFromCollection(people, true);
+            range.AutoFitColumns();
+            await package.SaveAsync();
+        }
+
+        public static async Task CreateCSV()
+        {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            var file = new FileInfo(@"D:\C#\Recap\WinterProject\Session7CRUDExcel\Files\TestCSV.csv");
+            await SaveCSVFile(persons, file);
+        }
+
+        private static  async Task SaveCSVFile(List<Person> people, FileInfo file)
+        {
+            DeleteIfExists(file);
+            var package = new ExcelPackage(file);
+            var ws = package.Workbook.Worksheets.Add("MainReport");
             var range = ws.Cells["A1"].LoadFromCollection(people, true);
             range.AutoFitColumns();
             await package.SaveAsync();

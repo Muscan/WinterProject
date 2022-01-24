@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+	<Folder Include="Files\" />
 	<Folder Include="UI\" />
   </ItemGroup>
 

@@ -15,6 +15,11 @@ namespace Session7CRUDExcel
             
         }
 
+        private void btnCreateCSV_Click(object sender, EventArgs e)
+        {
+            new ControllerPerson();
+        }
+
         /*Exercise 1
         Write a program which creates an excel file and writes some data into it. 
         When opening the file in Excel, everything must look fine. 
