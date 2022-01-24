@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinterProject", "WinterProject\WinterProject.csproj", "{E994F27C-C6BC-4F3C-8C40-87999C17B73F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session1", "Session1\Session1.csproj", "{417E0D1A-7263-45AA-9A6B-1D22946FB78B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session2ObjectsClassesArraysStatic", "Session2ObjectsClassesArraysStatic\Session2ObjectsClassesArraysStatic.csproj", "{FD85418F-3E82-4E83-B4F7-0386FD6C24A5}"
@@ -21,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session6IOWorkingWithFilesI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session6PhotoAlbum", "Session6PhotoAlbum\Session6PhotoAlbum.csproj", "{4AD63BBE-58FF-4A3C-8D42-3D129528167E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session7CRUDExcel", "Session7CRUDExcel\Session7CRUDExcel.csproj", "{E3B0B772-A0FA-4E61-980E-D9D259273C46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session7CRUDExcel", "Session7CRUDExcel\Session7CRUDExcel.csproj", "{E3B0B772-A0FA-4E61-980E-D9D259273C46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session8CRUDSQL", "Session8CRUDSQL\Session8CRUDSQL.csproj", "{B78D261B-612D-4573-BB10-F5C6FA289CD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E994F27C-C6BC-4F3C-8C40-87999C17B73F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E994F27C-C6BC-4F3C-8C40-87999C17B73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E994F27C-C6BC-4F3C-8C40-87999C17B73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E994F27C-C6BC-4F3C-8C40-87999C17B73F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{417E0D1A-7263-45AA-9A6B-1D22946FB78B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{417E0D1A-7263-45AA-9A6B-1D22946FB78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{417E0D1A-7263-45AA-9A6B-1D22946FB78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,6 +65,10 @@ Global
 		{E3B0B772-A0FA-4E61-980E-D9D259273C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3B0B772-A0FA-4E61-980E-D9D259273C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3B0B772-A0FA-4E61-980E-D9D259273C46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B78D261B-612D-4573-BB10-F5C6FA289CD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78D261B-612D-4573-BB10-F5C6FA289CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78D261B-612D-4573-BB10-F5C6FA289CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78D261B-612D-4573-BB10-F5C6FA289CD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
