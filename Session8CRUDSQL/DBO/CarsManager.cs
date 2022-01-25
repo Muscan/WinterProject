@@ -11,11 +11,11 @@ namespace Session8CRUDSQL.Classes
 
             return cars;
         }
-
         public IEnumerable<CreatedCar> GetAllCars()
         {
             List<CreatedCar> cars = new List<CreatedCar>();
-            
+            //tbd - move connection into a separate class
+            //add ADO.NEt and EntityFramework
             string connString = "DESKTOP-Name\\SQLEXPRESS;Database=Session11;Trusted_Connection=True;";
             
             using (SqlConnection connection = new SqlConnection(connString))
