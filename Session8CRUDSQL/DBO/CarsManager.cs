@@ -2,22 +2,25 @@
 
 namespace Session8CRUDSQL.Classes
 {
-    internal class CarsManager
+    class CarsManager
     {
         public IEnumerable<Car> GetAllCarsWithEF()
         {
+            
             List<Car> cars = new List<Car>();
+          
 
-
-            return cars;
+            return new List<Car>();
         }
+        //ado.net
         public IEnumerable<CreatedCar> GetAllCars()
         {
             List<CreatedCar> cars = new List<CreatedCar>();
+            
             //tbd - move connection into a separate class
             //add ADO.NEt and EntityFramework
-            string connString = "DESKTOP-Name\\SQLEXPRESS;Database=Session11;Trusted_Connection=True;";
-            
+            string connString = "Server=DESKTOP-RHIQ9E0\\SQLEXPRESS;Database=CarRental;Trusted_Connection=True;";
+          
             using (SqlConnection connection = new SqlConnection(connString))
             {
                 connection.Open();
