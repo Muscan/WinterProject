@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnRead = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnReadAdoNet = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.carRentalContextBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.carBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lstView = new System.Windows.Forms.ListView();
+            ((System.ComponentModel.ISupportInitialize)(this.carRentalContextBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRead
@@ -44,17 +48,6 @@
             this.btnRead.UseVisualStyleBackColor = true;
             this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(54, 32);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(685, 255);
-            this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // btnReadAdoNet
             // 
             this.btnReadAdoNet.Location = new System.Drawing.Point(157, 372);
@@ -65,18 +58,39 @@
             this.btnReadAdoNet.UseVisualStyleBackColor = true;
             this.btnReadAdoNet.Click += new System.EventHandler(this.btnReadAdoNet_Click);
             // 
+            // carRentalContextBindingSource
+            // 
+            this.carRentalContextBindingSource.DataSource = typeof(Session8CRUDSQL.Model.CarRentalContext);
+            // 
+            // carBindingSource
+            // 
+            this.carBindingSource.DataSource = typeof(Session8CRUDSQL.Model.Car);
+            // 
+            // lstView
+            // 
+            this.lstView.GridLines = true;
+            this.lstView.Location = new System.Drawing.Point(93, 84);
+            this.lstView.Name = "lstView";
+            this.lstView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lstView.Size = new System.Drawing.Size(589, 139);
+            this.lstView.TabIndex = 3;
+            this.lstView.UseCompatibleStateImageBehavior = false;
+            this.lstView.View = System.Windows.Forms.View.Details;
+            this.lstView.SelectedIndexChanged += new System.EventHandler(this.lstView_SelectedIndexChanged);
+            // 
             // ReadSQL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lstView);
             this.Controls.Add(this.btnReadAdoNet);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnRead);
             this.Name = "ReadSQL";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carRentalContextBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -84,7 +98,9 @@
         #endregion
 
         private Button btnRead;
-        private DataGridView dataGridView1;
         private Button btnReadAdoNet;
+        private BindingSource carRentalContextBindingSource;
+        private BindingSource carBindingSource;
+        private ListView lstView;
     }
 }
