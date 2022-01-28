@@ -1,4 +1,6 @@
-﻿using System.Data.SqlClient;
+﻿using Session8CRUDSQL.Model;
+using System.Data.SqlClient;
+using System.Linq;
 
 namespace Session8CRUDSQL.Classes
 {
@@ -6,11 +8,18 @@ namespace Session8CRUDSQL.Classes
     {
         public IEnumerable<Car> GetAllCarsWithEF()
         {
-            
-            List<Car> cars = new List<Car>();
+            CarRentalContext context = new CarRentalContext();
+            var cars =  context.Cars;
+            context.SaveChanges();
+            //TBD!!!
+            //return cars;
+
+
+            return (IEnumerable<Car>)cars;
+            //List<Car> cars = new List<Car>();
           
 
-            return new List<Car>();
+            //return new List<Car>();
         }
         //ado.net
         public IEnumerable<CreatedCar> GetAllCars()
