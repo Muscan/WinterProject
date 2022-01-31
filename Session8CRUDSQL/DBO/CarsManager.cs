@@ -9,13 +9,14 @@ namespace Session8CRUDSQL.Classes
         public IEnumerable<Car> GetAllCarsWithEF()
         {
             CarRentalContext context = new CarRentalContext();
-            var cars =  context.Cars;
-            context.SaveChanges();
+            var cars =  context.Cars.ToList();
+            
             //TBD!!!
             //return cars;
+            return (IEnumerable<Car>)context.Cars.AsEnumerable();
+            
 
-
-            return (IEnumerable<Car>)cars;
+            //return (IEnumerable<Car>)cars;
             //List<Car> cars = new List<Car>();
           
 
