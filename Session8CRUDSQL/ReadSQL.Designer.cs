@@ -42,7 +42,7 @@
             // 
             this.btnRead.Location = new System.Drawing.Point(477, 372);
             this.btnRead.Name = "btnRead";
-            this.btnRead.Size = new System.Drawing.Size(118, 29);
+            this.btnRead.Size = new System.Drawing.Size(128, 29);
             this.btnRead.TabIndex = 0;
             this.btnRead.Text = "Read Entity";
             this.btnRead.UseVisualStyleBackColor = true;
@@ -57,14 +57,6 @@
             this.btnReadAdoNet.Text = "Read AdoNet";
             this.btnReadAdoNet.UseVisualStyleBackColor = true;
             this.btnReadAdoNet.Click += new System.EventHandler(this.btnReadAdoNet_Click);
-            // 
-            // carRentalContextBindingSource
-            // 
-            this.carRentalContextBindingSource.DataSource = typeof(Session8CRUDSQL.Model.CarRentalContext);
-            // 
-            // carBindingSource
-            // 
-            this.carBindingSource.DataSource = typeof(Session8CRUDSQL.Model.Car);
             // 
             // lstView
             // 
