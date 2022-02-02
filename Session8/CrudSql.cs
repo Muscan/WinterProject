@@ -47,6 +47,23 @@ namespace Session8
 
             
             carRentalEntities.SaveChanges();
+            lstView.Clear();
+            lstView.Columns.Add("ID", 200, HorizontalAlignment.Left);
+            lstView.Columns.Add("Name", 200, HorizontalAlignment.Left);
+            lstView.Columns.Add("Engine cmc", 200, HorizontalAlignment.Left);
+            lstView.Columns.Add("Series Year", 200, HorizontalAlignment.Left);
+
+            foreach (object car in carRentalEntities.Cars)
+            {
+                ListViewItem listItem = new ListViewItem();
+                
+            }
+
+        }
+
+        private void lstViewDB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
