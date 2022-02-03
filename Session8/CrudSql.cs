@@ -18,24 +18,7 @@ namespace Session8
         {
             InitializeComponent();
 
-            CarRentalEntities carRentalEntities = new CarRentalEntities();
-           
-
-            var firstCar = carRentalEntities.Cars.FirstOrDefault();
-
-            firstCar.Name = "Mercedes";
-
-            carRentalEntities.SaveChanges();
-
-            //string newCar = "";
-            CarDPO newCar = new CarDPO();
-            //newCar.ID = 3;
-            newCar.Name = "VWALB";
-            newCar.Engine = 4;
-            newCar.SeriesYear = 2021;
-
-            var createCar = carRentalEntities.Cars.Add(newCar);
-            carRentalEntities.SaveChanges();
+            
         }
 
         private void btnReadAll_Click(object sender, EventArgs e)
@@ -53,10 +36,14 @@ namespace Session8
             lstView.Columns.Add("Engine cmc", 200, HorizontalAlignment.Left);
             lstView.Columns.Add("Series Year", 200, HorizontalAlignment.Left);
 
-            foreach (object car in carRentalEntities.Cars)
+            foreach (CarDPO car in carRentalEntities.Cars)
             {
                 ListViewItem listItem = new ListViewItem();
-                
+                listItem.SubItems.Add(car.SeriesYear.ToString());
+                listItem.Text = car.ID.ToString();
+                listItem.SubItems.Add(car.Name);
+                listItem.SubItems.Add(car.Engine.ToString());
+                lstView.Items.Add(listItem);
             }
 
         }
@@ -64,6 +51,78 @@ namespace Session8
         private void lstViewDB_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            CarRentalEntities carRentalEntities = new CarRentalEntities();
+
+            var firstCar = carRentalEntities.Cars.FirstOrDefault();
+
+            //firstCar.Name = "Mercedes";
+
+            carRentalEntities.SaveChanges();
+
+            //string newCar = "";
+            CarDPO newCar = new CarDPO();
+            //newCar.ID = 3;
+            if (txtBoxName.Text != "")
+            {
+                newCar.Name = txtBoxName.Text;
+
+            }
+            else { 
+                MessageBox.Show("Name cannot be empty");
+                return;
+            }
+       
+
+            try
+            {  
+                newCar.Engine = decimal.Parse(txtBoxEngine.Text);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Engine not valid");
+                return;
+            }
+            try
+            {
+                newCar.SeriesYear = int.Parse(txtBoxSeriesYear.Text);
+            }
+            catch(System.FormatException)
+            {
+                MessageBox.Show("Series year not valid");
+                return;
+            }
+
+            var createCar = carRentalEntities.Cars.Add(newCar);
+            carRentalEntities.SaveChanges();
+        }
+
+        private void btnDeleteCar_Click(object sender, EventArgs e)
+        {
+            CarRentalEntities carRentalEntities = new CarRentalEntities();
+            var firstCar = carRentalEntities.Cars.FirstOrDefault();
+            int id;
+            try
+            {
+                id = int.Parse(txtBoxDeleteCar.Text);
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("ID not valid");
+                return ;
+            }
+            foreach (CarDPO car in carRentalEntities.Cars)
+            {
+                if(car.ID == id)
+                {
+                    carRentalEntities.Cars.Remove(car);
+                }
+            }
+                carRentalEntities.SaveChanges();
         }
     }
 }
