@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32002.261
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session1", "Session1\Session1.csproj", "{417E0D1A-7263-45AA-9A6B-1D22946FB78B}"
 EndProject
@@ -36,6 +36,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session8.Data.DPO", "Session8.Data.DPO\Session8.Data.DPO.csproj", "{8C0DEFAD-F076-43F3-B68F-496A1CB50CBD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session8.Data.Persistance", "Session8.Data.Persistance\Session8.Data.Persistance.csproj", "{159EDBF2-942D-46D1-89FF-E63C969C9F36}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Session8DB", "Session8DB\Session8DB.sqlproj", "{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,6 +159,18 @@ Global
 		{159EDBF2-942D-46D1-89FF-E63C969C9F36}.Release|Any CPU.Build.0 = Release|Any CPU
 		{159EDBF2-942D-46D1-89FF-E63C969C9F36}.Release|x86.ActiveCfg = Release|Any CPU
 		{159EDBF2-942D-46D1-89FF-E63C969C9F36}.Release|x86.Build.0 = Release|Any CPU
+		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Debug|x86.Build.0 = Debug|Any CPU
+		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Release|x86.ActiveCfg = Release|Any CPU
+		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Release|x86.Build.0 = Release|Any CPU
+		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
