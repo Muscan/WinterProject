@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Session8.Data.DPO\Session8.Data.DPO.csproj" />
+    <ProjectReference Include="..\Session8.Data.Persistance\Session8.Data.Persistance.csproj" />
+    <ProjectReference Include="..\Session8\Session8.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Session8.Data.DPO;
+using Session8.Data.Persistance;
 
 namespace Session9WebApi.Controllers
 {
@@ -18,16 +20,14 @@ namespace Session9WebApi.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        [HttpGet]
+        [Route("readallcars")]
+        public IEnumerable<CarDPO> Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+            CarRentalEntities carRentalEntities = new CarRentalEntities("Data Source=DESKTOP-RHIQ9E0\\SQLEXPRESS;Initial Catalog=CarRental;Integrated Security=True;");
+            return carRentalEntities.Cars;
+
+
         }
         [HttpPost]
         [Route("tomorrowpost")]

@@ -19,6 +19,11 @@ namespace Session8.Data.Persistance
         {
             Database.SetInitializer<CarRentalEntities>(null);
         }
+        public CarRentalEntities(string conn)
+           : base(conn)
+        {
+            Database.SetInitializer<CarRentalEntities>(null);
+        }
 
         public virtual DbSet<CarDPO> Cars { get; set; }
     }

@@ -20,8 +20,17 @@ namespace Session8
             InitializeComponent();
 
             CarRentalEntities carRentalEntities = new CarRentalEntities();
-            CarController carController = new CarController();
-            carController.ReturnAllCars();
+            var firstCar = carRentalEntities.Cars.FirstOrDefault();
+
+            CarDPO carDPO = new CarDPO();
+            carDPO.Name = "Renalut";
+            carDPO.Engine = 2;
+            carDPO.SeriesYear = 2001;
+            carRentalEntities.Cars.Add(carDPO); 
+           
+            carRentalEntities.SaveChanges();
+            /*  CarController carController = new CarController();
+              carController.ReturnAllCars();*/
         }
 
         private void btnReadAll_Click(object sender, EventArgs e)
