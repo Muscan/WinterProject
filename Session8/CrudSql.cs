@@ -1,4 +1,5 @@
-﻿using Session8.Data.DPO;
+﻿using Session8.Controller;
+using Session8.Data.DPO;
 using Session8.Data.Persistance;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,9 @@ namespace Session8
         {
             InitializeComponent();
 
-            
+            CarRentalEntities carRentalEntities = new CarRentalEntities();
+            CarController carController = new CarController();
+            carController.ReturnAllCars();
         }
 
         private void btnReadAll_Click(object sender, EventArgs e)
