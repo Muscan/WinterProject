@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session8.Data.Persistance",
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Session8DB", "Session8DB\Session8DB.sqlproj", "{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session10Web", "Session10Web\Session10Web.csproj", "{86E1B263-E7D7-4A5B-B9D8-30A577FD2895}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,14 @@ Global
 		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Release|x86.ActiveCfg = Release|Any CPU
 		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Release|x86.Build.0 = Release|Any CPU
 		{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}.Release|x86.Deploy.0 = Release|Any CPU
+		{86E1B263-E7D7-4A5B-B9D8-30A577FD2895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E1B263-E7D7-4A5B-B9D8-30A577FD2895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E1B263-E7D7-4A5B-B9D8-30A577FD2895}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{86E1B263-E7D7-4A5B-B9D8-30A577FD2895}.Debug|x86.Build.0 = Debug|Any CPU
+		{86E1B263-E7D7-4A5B-B9D8-30A577FD2895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E1B263-E7D7-4A5B-B9D8-30A577FD2895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E1B263-E7D7-4A5B-B9D8-30A577FD2895}.Release|x86.ActiveCfg = Release|Any CPU
+		{86E1B263-E7D7-4A5B-B9D8-30A577FD2895}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

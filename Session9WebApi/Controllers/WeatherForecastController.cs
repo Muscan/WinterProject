@@ -8,6 +8,8 @@ namespace Session9WebApi.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        IConfiguration configuration;
+
         private static readonly string[] Summaries = new[]
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -15,8 +17,9 @@ namespace Session9WebApi.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IConfiguration config)
         {
+            configuration = config;
             _logger = logger;
         }
 
@@ -24,7 +27,9 @@ namespace Session9WebApi.Controllers
         [Route("readallcars")]
         public IEnumerable<CarDPO> Get()
         {
-            CarRentalEntities carRentalEntities = new CarRentalEntities("Data Source=DESKTOP-RHIQ9E0\\SQLEXPRESS;Initial Catalog=CarRental;Integrated Security=True;");
+            configuration.GetConnectionString("CarRentalEntities");
+            //CarRentalEntities carRentalEntities = new CarRentalEntities("Data Source=DESKTOP-RHIQ9E0\\SQLEXPRESS;Initial Catalog=CarRental;Integrated Security=True;");
+            CarRentalEntities carRentalEntities = new CarRentalEntities(configuration.GetConnectionString("CarRentalEntities"));
             return carRentalEntities.Cars;
 
 
