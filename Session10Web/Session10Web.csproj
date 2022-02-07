@@ -4,4 +4,11 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Session8.Data.Persistance\Session8.Data.Persistance.csproj" />
+    <ProjectReference Include="..\Session8CRUDSQL\Session8CRUDSQL.csproj" />
+    <ProjectReference Include="..\Session8\Session8.csproj" />
+    <ProjectReference Include="..\Session9WebApi\Session9WebApi.csproj" />
+  </ItemGroup>
+
 </Project>

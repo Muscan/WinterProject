@@ -13,5 +13,11 @@ namespace Session8.Controller
         {
             return new CarRentalEntities();
         }
+
+
+        public CarRentalEntities ReturnCar()
+        {
+            return new CarRentalEntities();
+        }
     }
 }
