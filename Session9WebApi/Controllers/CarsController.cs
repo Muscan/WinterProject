@@ -24,19 +24,14 @@ namespace Session9WebApi.Controllers
         public IEnumerable<CarDPO> Get()
         {
             configuration.GetConnectionString("CarRentalEntities");
-            //CarRentalEntities carRentalEntities = new CarRentalEntities("Data Source=DESKTOP-RHIQ9E0\\SQLEXPRESS;Initial Catalog=CarRental;Integrated Security=True;");
             CarRentalEntities carRentalEntities = new CarRentalEntities(configuration.GetConnectionString("CarRentalEntities"));
             return carRentalEntities.Cars;
-  
-
-
         }
 
         [HttpGet]
         [Route("DisplayOneCar")]
         public async Task<ActionResult<CarDPO>> GetOneCar(int id) 
         {
-
             configuration.GetConnectionString("CarRentalEntities");
             CarRentalEntities carRentalEntities = new CarRentalEntities(configuration.GetConnectionString("CarRentalEntities"));
             var oneCar = await carRentalEntities.Cars.FindAsync(id);
@@ -44,22 +39,25 @@ namespace Session9WebApi.Controllers
             if (oneCar == null)
                 return BadRequest("Car not found ");
             return Ok(oneCar);
-
         }
+
         [HttpPost]
         [Route("AddCar")]
-        public async Task<ActionResult> AddOneCar(CarDPO carDPO, int id)
+        public async Task<ActionResult> AddOneCar(CarDPO carDPO)
         {
             configuration.GetConnectionString("CarRentalEntities");
             CarRentalEntities carRentalEntities = new CarRentalEntities(configuration.GetConnectionString("CarRentalEntities"));
+            
             carRentalEntities.Cars.Add(carDPO);
             await carRentalEntities.SaveChangesAsync();
-            return Ok(await carRentalEntities.Cars.FindAsync(id));
+            return Ok(await carRentalEntities.Cars.FindAsync(carDPO.ID));
+           
+
         }
 
         [HttpPut]
         [Route("UpdateCar")]
-        public async Task<ActionResult<List<CarDPO>>> UpdateCar(CarDPO car, int id)
+        public async Task<ActionResult<List<CarDPO>>> UpdateCar(CarDPO car)
         {
             configuration.GetConnectionString("CarRentalEntities");
             CarRentalEntities carRentalEntities = new CarRentalEntities(configuration.GetConnectionString("CarRentalEntities"));

@@ -12,11 +12,11 @@ namespace Session3InheritanceAccesModifiersAutoPropStatic
         public class Shape
         //Shape, Circle, Rectangle, Square.
         {
-            //default constructor
+            
             public double a;
             private double b;
             protected double c;
-
+            //default constructor
             public Shape()
             {
                 Console.WriteLine("I`m the default constructor for Shape ");

@@ -12,6 +12,9 @@ namespace Session1
             //Declare a variable and increment it with one
             int firstNumber = 0;
             firstNumber = firstNumber + 1;
+            firstNumber++;
+            firstNumber += 1;
+
 
             //Print your names
             Console.WriteLine("Your Name");
@@ -63,7 +66,7 @@ namespace Session1
                 if (i % 5 == 0)
                 {
                     Console.Write(i + " ");
-
+     
                 }
 
             }
@@ -94,6 +97,33 @@ namespace Session1
                 Console.WriteLine("Position out of range");
             }
 
+            //calculate radius of a circle
+            const double pi = 3.14;
+            
+            double radius = double.Parse(Console.ReadLine());
+            double formel = radius * pi * radius;
+            Console.WriteLine(formel);
+
+            int num = 3;
+            switch (num)
+            {
+                case 0:
+                    Console.WriteLine("one");
+                    break;
+                case 1:
+                    Console.WriteLine("two");
+                    break;
+                case 2:
+                    Console.WriteLine("three");
+                    break;
+                case 3:
+                    Console.WriteLine("four");
+                    break;
+                    default:
+                    Console.WriteLine("None selected");
+                    break;
+
+            }
 
         }
     }

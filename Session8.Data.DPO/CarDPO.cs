@@ -14,8 +14,11 @@ namespace Session8.Data.DPO
     {
         [Key]
         public int ID { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         public decimal Engine { get; set; }
+        [Required]
         public int SeriesYear { get; set; }
     }
 }

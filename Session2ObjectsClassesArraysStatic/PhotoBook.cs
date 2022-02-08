@@ -30,11 +30,9 @@ namespace Session2ObjectsClassesArraysStatic
             this.numPages = numPages;
         }
 
-        //For respect for OOP, i will declare a ToString
-        //Intelisense sugereaza acelasi nume obligatoriu
+
         public override string ToString()
         {
-            //return base.ToString() e sugestia de Intelisense
             return base.ToString();
         }
     }

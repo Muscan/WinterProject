@@ -66,6 +66,7 @@ namespace Session2ObjectsClassesArraysStatic
             readerName = Console.ReadLine();
             Person p3 = new Person(readerName);
             //Varianta 1 in care salvez numele intr-un array
+            //un sir de obiecte de tip person
             Person[] arrayPersons = { p1, p2, p3 };
 
             //
