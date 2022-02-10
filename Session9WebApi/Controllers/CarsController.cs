@@ -51,8 +51,6 @@ namespace Session9WebApi.Controllers
             carRentalEntities.Cars.Add(carDPO);
             await carRentalEntities.SaveChangesAsync();
             return Ok(await carRentalEntities.Cars.FindAsync(carDPO.ID));
-           
-
         }
 
         [HttpPut]

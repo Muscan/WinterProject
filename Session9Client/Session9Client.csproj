@@ -12,6 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Session8.Data.DPO\Session8.Data.DPO.csproj" />
+    <ProjectReference Include="..\Session8.Data.Persistance\Session8.Data.Persistance.csproj" />
+    <ProjectReference Include="..\Session9WebApi\Session9WebApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
   </ItemGroup>
 
