@@ -1,4 +1,4 @@
-namespace Session9WebApi
+namespace Session10WebApi
 {
     public class WeatherForecast
     {
