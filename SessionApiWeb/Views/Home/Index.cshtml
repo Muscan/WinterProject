@@ -1,12 +1,10 @@
 ﻿@model Cars
 @foreach(var car in Model.carDpo)
 {
-    <span>@car.Name</span>
+
+    <h3>@car.Name</h3>
+    <span>@car.ID @car.Name @car.Engine @car.SeriesYear</span>
 }
-
-
-
-
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">ASP.NET Core</a>.</p>

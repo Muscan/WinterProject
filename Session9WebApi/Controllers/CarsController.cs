@@ -37,7 +37,7 @@ namespace Session9WebApi.Controllers
             var oneCar = await carRentalEntities.Cars.FindAsync(id);
             await carRentalEntities.SaveChangesAsync();
             if (oneCar == null)
-                return BadRequest("Car not found ");
+                return NotFound("Car not found");
             return Ok(oneCar);
         }
 
