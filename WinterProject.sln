@@ -39,7 +39,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session8.Data.Persistance",
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Session8DB", "Session8DB\Session8DB.sqlproj", "{FA12B5A6-4D43-47F4-9BDC-B8B21072631C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionApiWeb", "SessionApiWeb\SessionApiWeb.csproj", "{9D901A47-7552-46AC-863D-52970B525E32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SessionApiWeb", "SessionApiWeb\SessionApiWeb.csproj", "{9D901A47-7552-46AC-863D-52970B525E32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSampleProject", "WebSampleProject", "{ABEB9C64-87B7-4E4B-A72A-830060FF1563}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
