@@ -17,6 +17,10 @@ namespace Session4AbstractClassesInterfacesStaticMembersAutoProp
         {
 
         }
+        public Oak(int age) : base(age)
+        {
+
+        }
         public override bool LeavesAreFalling()
         {
             return true;

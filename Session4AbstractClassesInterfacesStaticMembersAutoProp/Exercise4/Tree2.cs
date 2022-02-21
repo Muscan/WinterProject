@@ -20,6 +20,10 @@ namespace Session4AbstractClassesInterfacesStaticMembersAutoProp.Exercise4
             this.NrOfLeaves = NrOfLeaves;
             this.age = Age;
         }
+        public Tree2(int Age)
+        {
+            this.Age=Age;
+        }
 
         //prop + tab 2times
 
