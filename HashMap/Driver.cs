@@ -8,7 +8,12 @@ namespace Dictionary
 {
     internal class Driver
     {
-       
+        
+        //[Serializable]
+        public int _idnume;
+        //fields
+
+        public int Id1 { get { return _idnume; } set { } }
         public int Id { get; set; }
         public string Name { get; set; }
         public Driver(int Id, string Name)
@@ -21,5 +26,6 @@ namespace Dictionary
         {
             return Id + " " + Name;
         }
+        
     }
 }
