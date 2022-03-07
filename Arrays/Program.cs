@@ -22,6 +22,7 @@ namespace Arrays
             int[,] multiDimensionalArray2 = { { 1, 2, 3 }, { 4, 5, 6 } };
             //line 0: 1 2 3
             //line 1: 4 5 6 
+           
             Console.WriteLine(multiDimensionalArray2[1, 1]);
             for(int i = 0; i <= 1; i++)
             {
