@@ -29,6 +29,7 @@ namespace Sorting
         //5, 3, 7, 18, 10
         //3, 5, 7, 18, 10
         //3, 5, 7, 10, 18
+        //bubble sort
         public int[] EfficientBubbleSort(int[] nr)
         {
             bool swapped = false;

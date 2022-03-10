@@ -26,13 +26,14 @@ namespace Sorting
             {
                 Console.Write(numbers2[i] + " ");
             }
-           
+            //calling the Reverse from Array Object
             Array.Reverse(words);
             for (int i = 0; i < words.Length; i++)
             {
                 Console.Write(words[i] + " ");
             }
             Console.WriteLine();
+            //calling sort function from the Array object
             Array.Sort(words);
             for (int i = 0; i < words.Length; i++)
 
