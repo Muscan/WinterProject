@@ -40,6 +40,10 @@ namespace Sorting
             {
                 Console.Write(words[i] + " ");
             }
+
+            int[] inputArray = { 1, 3, 8, 14, 15 };
+            Console.WriteLine("Index position of the searched key is:" + ProvideData.BinarySearch(inputArray, 14));
+            
         }
 
     }
