@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortSearchArrays", "Sorting\SortSearchArrays.csproj", "{20ECAC38-204A-4D18-A0FE-0F42CE69D12E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReversePrintReplaceNElement", "ReversePrintReplaceNElement\ReversePrintReplaceNElement.csproj", "{0E9B227F-8357-477B-BC13-2F2D2C47CBE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReversePrintReplaceNElement", "ReversePrintReplaceNElement\ReversePrintReplaceNElement.csproj", "{0E9B227F-8357-477B-BC13-2F2D2C47CBE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParamsInRefOutTryCatch", "RefParamsTryCatch\ParamsInRefOutTryCatch.csproj", "{E1D7B3FC-8C01-4746-9562-675EC1469742}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -223,6 +225,14 @@ Global
 		{0E9B227F-8357-477B-BC13-2F2D2C47CBE7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0E9B227F-8357-477B-BC13-2F2D2C47CBE7}.Release|x86.ActiveCfg = Release|Any CPU
 		{0E9B227F-8357-477B-BC13-2F2D2C47CBE7}.Release|x86.Build.0 = Release|Any CPU
+		{E1D7B3FC-8C01-4746-9562-675EC1469742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1D7B3FC-8C01-4746-9562-675EC1469742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1D7B3FC-8C01-4746-9562-675EC1469742}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E1D7B3FC-8C01-4746-9562-675EC1469742}.Debug|x86.Build.0 = Debug|Any CPU
+		{E1D7B3FC-8C01-4746-9562-675EC1469742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1D7B3FC-8C01-4746-9562-675EC1469742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1D7B3FC-8C01-4746-9562-675EC1469742}.Release|x86.ActiveCfg = Release|Any CPU
+		{E1D7B3FC-8C01-4746-9562-675EC1469742}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
