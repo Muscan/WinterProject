@@ -1,5 +1,7 @@
-﻿using ParamsInRefOutTryCatch;
+﻿using NPOI.SS.Formula.Functions;
+using ParamsInRefOutTryCatch;
 using System;
+using System.Collections.Generic;
 
 namespace ParamsInRefOutTryCatch
 {
@@ -17,7 +19,10 @@ namespace ParamsInRefOutTryCatch
             params_obj.UseParams(a, b, c, d);
             double dbl = 3.12;
             string nameC = "C#";
-            params_obj.UseParamsObj(nameC, dbl, a);
+            List<int> myList = new List<int>();
+            myList.Add(10);
+            myList.Add(20);
+            params_obj.UseParamsObj(nameC, dbl, a, myList);
             
             //single parameter in
             In in_obj = new In();
@@ -27,13 +32,27 @@ namespace ParamsInRefOutTryCatch
             //object as parameter
             in_obj.UseInObj(nameC);
 
-
-
             Out out_obj = new Out();
             int age1;
             string name1;
             out_obj.UseOut(out name1, out age1);
             Console.WriteLine(name1 + " is " + age1 + " years old.");
+
+            //Ref in methods
+            int number = 1;
+            Ref refObj = new Ref();
+            refObj.RefMethod(ref number);
+            Console.WriteLine(number);
+
+            //Ref in main
+            int number1 = 1;
+           
+            refObj.Method(number1);
+            Console.WriteLine(number1);
+
+            //TryCatch
+            TryCatch tryCatch = new TryCatch();
+            tryCatch.TestingTryCatch(10);
         }
     }
 }
