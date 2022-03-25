@@ -8,7 +8,7 @@ namespace ParamsInRefOutTryCatch
     internal class Program
     {
         static void Main(string[] args)
-        {
+        {/*
             //params cannot be used because is a keyword
             //UseParams is a method from the class Params
             //Use Params when I don`t know how many 
@@ -48,7 +48,7 @@ namespace ParamsInRefOutTryCatch
             int number1 = 1;
            
             refObj.Method(number1);
-            Console.WriteLine(number1);
+            Console.WriteLine(number1);*/
 
             //TryCatch
             TryCatch tryCatch = new TryCatch();
