@@ -18,6 +18,9 @@ namespace Dictionary
             dogMeister["Tom"] = "Jim";
             //if the key does not exist, the value and the key will be added
             dogMeister["Rexx"] = "boy";
+            //It will check where the key is Rex and will print the value
+            //In this case it will check in dogMeister.Add("Rex", "Teddy");
+            //Rex is the key and Teddy is the values
             Console.WriteLine(dogMeister["Rex"] );
             Dictionary<int, bool> keyValuePairs = new Dictionary<int, bool>();  
             keyValuePairs.Add(1, true);
@@ -26,6 +29,9 @@ namespace Dictionary
             Dictionary<char, int> charIntPair = new Dictionary<char, int>();
             charIntPair.Add('A', 87);
             charIntPair.Add('B', 32);
+
+            //it will print 32
+            Console.WriteLine(charIntPair['B']);
             Console.WriteLine();
 
             Driver driver = new Driver(12, "John");

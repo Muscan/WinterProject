@@ -10,10 +10,8 @@ namespace Dictionary
     {
         
         //[Serializable]
-        public int _idnume;
+   
         //fields
-
-        public int Id1 { get { return _idnume; } set { } }
         public int Id { get; set; }
         public string Name { get; set; }
         public Driver(int Id, string Name)
